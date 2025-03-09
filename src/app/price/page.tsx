@@ -14,7 +14,7 @@ export default function PricePage() {
   return (
     <div className="min-h-screen bg-gray-950 text-gray-200">
       <Navbar />
-      <section className="relative z-10 py-20 bg-gray-950 ">
+      <section className="relative py-20 bg-gray-950 ">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
             Choose Your Plan

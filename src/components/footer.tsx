@@ -59,7 +59,10 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="mailto:shradeshjain123@gmail.com" className="hover:text-white transition">
+                <Link
+                  href="mailto:shradeshjain123@gmail.com"
+                  className="hover:text-white transition"
+                >
                   Contact
                 </Link>
               </li>
@@ -87,14 +90,16 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center mb-4 md:mb-0">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-23%20133321-hqbx8c0VhDVF7iZT1eDwNbhbf9RZZj.png"
-              alt="CyberCraft Logo"
-              className="w-8 h-8 mr-2"
-            />
-            <span className="text-white font-medium">CyberCraft</span>
-          </div>
+          <Link href="/">
+            <div className="flex items-center mb-4 md:mb-0">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-23%20133321-hqbx8c0VhDVF7iZT1eDwNbhbf9RZZj.png"
+                alt="CyberCraft Logo"
+                className="w-8 h-8 mr-2"
+              />
+              <span className="text-white font-medium">CyberCraft</span>
+            </div>
+          </Link>
           <p className="text-sm">© 2025 CyberCraft. All rights reserved.</p>
         </div>
       </div>

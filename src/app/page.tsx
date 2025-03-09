@@ -21,7 +21,7 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-[#020817] relative overflow-hidden">
       {/* Background rays effect */}
-      <div
+      {/* <div
         className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,#0066ff,transparent_60%)] opacity-30"
         style={{
           background: `
@@ -33,14 +33,14 @@ export default function Page() {
             transparent 50%)
           `,
         }}
-      />
+      /> */}
 
       <Navbar />
 
       {/* Hero Section */}
       <main className="relative z-10 flex flex-col items-center justify-center px-6  pt-32 pb-64 text-center max-w-7xl mx-auto">
         <div
-          className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,#0066ff,transparent_60%)] opacity-30"
+          className="-z-10 absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,#0066ff,transparent_60%)] opacity-30"
           style={{
             background: `
             radial-gradient(circle at 50% 120%, 
@@ -61,7 +61,10 @@ export default function Page() {
           <span className="text-white">real threats.</span>
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href={"mailto:shradeshjain123@gmail.com"}>
+          <Link
+            href="mailto:shradeshjain123@gmail.com"
+            className="cursor-pointer"
+          >
             <Button
               size="lg"
               variant="default"
@@ -70,13 +73,15 @@ export default function Page() {
               Request a Demo
             </Button>
           </Link>
-          <Button
-            size="lg"
-            variant="secondary"
-            className="bg-gray-800 text-white hover:bg-gray-700 text-lg px-8"
-          >
-            Blog
-          </Button>
+          <Link href="/about" className="cursor-pointer">
+            <Button
+              size="lg"
+              variant="secondary"
+              className="bg-gray-800 text-white hover:bg-gray-700 text-lg px-8"
+            >
+              Blog
+            </Button>
+          </Link>
         </div>
       </main>
 
@@ -231,27 +236,31 @@ export default function Page() {
       <section className="relative z-10 py-20 bg-blue-900">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Revolutionize Your Blockchain Experience?
+            Ready to Revolutionize Your Security Experience?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Join thousands of developers and users who are already benefiting
-            from CyberCraft's powerful blockchain tools and seamless user
+            from CyberCraft's powerful security tools and seamless user
             experience.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-white text-blue-900 hover:bg-blue-100 text-lg px-8"
-            >
-              Get Started Now
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-balck hover:bg-violet-900 text-lg px-8"
-            >
-              Schedule a Demo
-            </Button>
+            <Link href={"mailto:shradeshjain123@gmail.com"}>
+              <Button
+                size="lg"
+                className="bg-white text-blue-900 hover:bg-blue-100 text-lg px-8"
+              >
+                Get Started Now
+              </Button>
+            </Link>
+            <Link href={"mailto:shradeshjain123@gmail.com"}>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-balck hover:bg-violet-900 text-lg px-8"
+              >
+                Schedule a Demo
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
