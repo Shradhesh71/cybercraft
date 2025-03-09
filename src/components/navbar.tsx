@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const isHome = (window.location.href || "https://cybercraft.itsmeshradhesh.tech/" )=== "https://cybercraft.itsmeshradhesh.tech/";
+  const isHome = (typeof window !== "undefined" && window.location.href === "https://cybercraft.itsmeshradhesh.tech/");
 
   // Close menu on route change
   useEffect(() => {
